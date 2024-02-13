@@ -6,6 +6,7 @@ import { AboutFounderComponent } from "./pages/about-founder/about-founder.compo
 import { WhyChooseUsComponent } from "./pages/why-choose-us/why-choose-us.component";
 import { SignupCountdownComponent } from "./pages/signup-countdown/signup-countdown.component";
 import { CallToActionComponent } from "./pages/call-to-action/call-to-action.component";
+import { SlidingFormComponent } from "./pages/sliding-form/sliding-form.component";
 
 @Component({
   selector: "app-root",
@@ -17,7 +18,8 @@ import { CallToActionComponent } from "./pages/call-to-action/call-to-action.com
     AboutFounderComponent,
     WhyChooseUsComponent,
     SignupCountdownComponent,
-    CallToActionComponent
+    CallToActionComponent,
+    SlidingFormComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",

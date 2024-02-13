@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { CommonModule } from "@angular/common";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-sliding-form',
+  selector: "sliding-form",
   standalone: true,
-  imports: [],
-  templateUrl: './sliding-form.component.html',
-  styleUrl: './sliding-form.component.css'
+  imports: [CommonModule],
+  templateUrl: "./sliding-form.component.html",
+  styleUrl: "./sliding-form.component.css",
 })
-export class SlidingFormComponent {
+export class SlidingFormComponent implements OnInit {
+  showForm: boolean = false;
 
+  constructor() {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.showForm = true;
+    }, 3000); // 10 seconds
+  }
 }
