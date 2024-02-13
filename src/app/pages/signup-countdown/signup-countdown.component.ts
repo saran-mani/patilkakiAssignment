@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
-
+import { Component } from "@angular/core";
+import { CountdownComponent } from "ngx-countdown";
 @Component({
-  selector: 'app-signup-countdown',
+  selector: "signup-countdown",
   standalone: true,
-  imports: [],
-  templateUrl: './signup-countdown.component.html',
-  styleUrl: './signup-countdown.component.css'
+  imports: [CountdownComponent],
+  templateUrl: "./signup-countdown.component.html",
+  styleUrl: "./signup-countdown.component.css",
 })
-export class SignupCountdownComponent {
-
-}
+export class SignupCountdownComponent {}
