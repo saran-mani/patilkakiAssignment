@@ -5,6 +5,7 @@ import { NavbarComponent } from "./pages/navbar/navbar.component";
 import { AboutFounderComponent } from "./pages/about-founder/about-founder.component";
 import { WhyChooseUsComponent } from "./pages/why-choose-us/why-choose-us.component";
 import { SignupCountdownComponent } from "./pages/signup-countdown/signup-countdown.component";
+import { CallToActionComponent } from "./pages/call-to-action/call-to-action.component";
 
 @Component({
   selector: "app-root",
@@ -15,7 +16,8 @@ import { SignupCountdownComponent } from "./pages/signup-countdown/signup-countd
     NavbarComponent,
     AboutFounderComponent,
     WhyChooseUsComponent,
-    SignupCountdownComponent
+    SignupCountdownComponent,
+    CallToActionComponent
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
