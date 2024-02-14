@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.css',
 })
-export class HeroSectionComponent {}
+export class HeroSectionComponent {
+  btnClick() {
+    alert('Get started clicked');
+  }
+}

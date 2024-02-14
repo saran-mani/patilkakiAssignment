@@ -28,4 +28,8 @@ button {
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
+  color: black;
+}
+button {
+  color: white;
 }
