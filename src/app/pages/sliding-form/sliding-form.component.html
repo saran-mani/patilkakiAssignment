@@ -1,12 +1,30 @@
-<div id="delayedForm" [ngClass]="{'visible': showForm, 'hidden': !showForm}">
-  <div class="form-content">
-    <h2>Delayed Form</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-      <input type="submit" value="Submit" />
+<div
+  class="popup-form bg-royal-yellow"
+  [ngStyle]="{ display: showPopup ? 'block' : 'none' }"
+>
+  <div class="popup-content">
+    <span class="close" (click)="closeForm()">&times;</span>
+    <h2 class="text-xl text-center font-bold">Get Start !!</h2>
+    <form (ngSubmit)="submitForm()">
+      <label for="mobile">Mobile Number:</label>
+      <input
+        type="text"
+        id="mobile"
+        name="mobile"
+        required
+        [(ngModel)]="mobileNumber"
+      />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        [(ngModel)]="email"
+      />
+      <button class="bg-sage-green text-light-color" type="submit">
+        Submit
+      </button>
     </form>
   </div>
 </div>

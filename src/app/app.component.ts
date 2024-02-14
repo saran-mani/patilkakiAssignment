@@ -1,29 +1,13 @@
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
-import { HeroSectionComponent } from "./pages/hero-section/hero-section.component";
-import { NavbarComponent } from "./pages/navbar/navbar.component";
-import { AboutFounderComponent } from "./pages/about-founder/about-founder.component";
-import { WhyChooseUsComponent } from "./pages/why-choose-us/why-choose-us.component";
-import { SignupCountdownComponent } from "./pages/signup-countdown/signup-countdown.component";
-import { CallToActionComponent } from "./pages/call-to-action/call-to-action.component";
-import { SlidingFormComponent } from "./pages/sliding-form/sliding-form.component";
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { SlidingFormComponent } from './pages/sliding-form/sliding-form.component';
 
 @Component({
-  selector: "app-root",
+  selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    HeroSectionComponent,
-    NavbarComponent,
-    AboutFounderComponent,
-    WhyChooseUsComponent,
-    SignupCountdownComponent,
-    CallToActionComponent,
-    SlidingFormComponent,
-  ],
-  templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css",
+  imports: [RouterOutlet, NavbarComponent, SlidingFormComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = "patilkakiAssignment";
-}
+export class AppComponent {}
